@@ -5,7 +5,7 @@ molecool
 [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/REPLACE_WITH_APPVEYOR_LINK/branch/master?svg=true)](https://ci.appveyor.com/project/REPLACE_WITH_OWNER_ACCOUNT/molecool/branch/master)
 [![codecov](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/molecool/branch/master/graph/badge.svg)](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/molecool/branch/master)
 
-A python package for analysing and visualizing xyz files for MolSSI best practices workshop
+This is a python package for analysing and visualizing xyz files for MolSSI best practices workshop at Buffalo 2020
 
 ### Copyright
 
