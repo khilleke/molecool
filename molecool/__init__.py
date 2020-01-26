@@ -5,7 +5,7 @@ A python package for analysing and visualizing xyz files for MolSSI best practic
 
 # Add imports here
 from .functions import *
-from .measure import calculate_angle, calculate_distance
+from .measure import calculate_angle, calculate_distance, calculate_molecular_mass, calculate_center_of_mass
 from .molecule import build_bond_list
 from .visualize import draw_bond_histogram, draw_molecule
 from .atom_data import atom_colors, atomic_weights
