@@ -31,6 +31,10 @@ def calculate_distance(rA, rB):
     """
     # This function calculates the distance between two points given as numpy arrays.
 
+    if not isinstance(rA, np.ndarray)  or not isinstance(rB, np.ndarray):
+        raise TypeError("Input must be type np.ndarray for calculate_distance!")
+
+
     distance_vector = (rA - rB)
     distance = np.linalg.norm(distance_vector)
 
@@ -38,6 +42,22 @@ def calculate_distance(rA, rB):
 
 
 def calculate_angle(rA, rB, rC, degrees=False):
+    """
+    Calculate the angle between three points.
+
+    Parameters
+    ----------
+    rA, rB, rC : np.nparray
+        The coordinates of each point
+
+    degrees : str, Optional, default=radians
+        Units of angle calculated
+
+    Returns
+    -------
+    theta : float
+        The angle between the three points.
+    """
     # Calculate the angle between three points. Answer is given in radians by default, but can be given in degrees
     # by setting degrees=True
     AB = rB - rA
@@ -49,3 +69,21 @@ def calculate_angle(rA, rB, rC, degrees=False):
     else:
         return theta
 
+
+def calculate_molecular_mass(symbols):
+    """Calculate the mass of a molecule.
+
+    Parameters
+    ----------
+    symbols : list
+        A list of elements.
+
+    Returns
+    -------
+    mass : float
+        The mass of the molecule
+    """
+    for atom in symbols:
+        molecular_mass += molecool.atom_data.atom_weights[atom]
+       
+    return molecular_mass
